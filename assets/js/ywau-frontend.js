@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
         $('input[name="submit-files"]').remove();
         $('span.uploaded-filename').remove();
 
-        $('div.upload-items').append('<input type="submit" name="submit-files" value="Invia"></div>');
+        $('div.upload-items').append('<input type="submit" name="submit-files" value="Upload"></div>');
         $('#uploadFileList').append('<span class="uploaded-filename">' + filename + '</span>');
     });
 });

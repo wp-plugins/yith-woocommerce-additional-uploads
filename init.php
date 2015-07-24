@@ -5,7 +5,7 @@ Plugin URI: http://yithemes.com
 Description: A concrete way to customize your orders, load a file with your images, and complete your order according to your needs.
 Author: Yithemes
 Text Domain: ywau
-Version: 1.0.0
+Version: 1.0.1
 Author URI: http://yithemes.com/
 */
 
@@ -49,7 +49,7 @@ if ( ! defined( 'YITH_YWAU_FREE_INIT' ) ) {
 }
 
 if ( ! defined( 'YITH_YWAU_VERSION' ) ) {
-	define( 'YITH_YWAU_VERSION', '1.0.0' );
+	define( 'YITH_YWAU_VERSION', '1.0.1' );
 }
 
 if ( ! defined( 'YITH_YWAU_FILE' ) ) {

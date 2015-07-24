@@ -111,7 +111,10 @@ if ( ! class_exists( 'YITH_WooCommerce_Additional_Uploads' ) ) {
 
 			if ( $this->allow_on_cart_page ) {
 				add_action( "woocommerce_after_cart", array( $this, 'show_upload_section_on_cart_page' ) );
-				add_action( 'woocommerce_checkout_order_processed', array( $this, 'test2' ), 10, 2 );
+				add_action( 'woocommerce_checkout_order_processed', array(
+					$this,
+					'attach_file_from_cart_to_order'
+				), 10, 2 );
 			}
 		}
 
@@ -205,25 +208,26 @@ if ( ! class_exists( 'YITH_WooCommerce_Additional_Uploads' ) ) {
 		 * Upload the customer file and link it to the current order
 		 */
 		public function order_file_uploaded() {
-
-
 			$order_id = intval( $_POST["order-id"] );
 
 			if ( $this->order_has_file_uploaded( $order_id ) ) {
-				$this->set_upload_status( "rejected", sprintf( __( "You have already sent a file for the current order, it is not possible to add the new %s file.", "ywau" ), $_FILES['uploadFile']['name'][0] ) );
+				$this->set_upload_status( "rejected", sprintf( __( "You have already sent a file for the current order, it is not possible to add the new file %s.", "ywau" ), $_FILES['uploadFile']['name'][0] ) );
+
 				//  order has current file uploaded, you can't add a new file.
 
 				return;
 			}
 
 			if ( ! $_FILES['uploadFile']['name'][0] ) {
-				$this->set_upload_status( "failed", sprintf( __( "The name %s of the file has not been accepted.", "ywau" ), $_FILES['uploadFile']['name'][0] ) );
+				$this->set_upload_status( "failed", sprintf( __( "The name of the file %s has not been accepted.", "ywau" ), $_FILES['uploadFile']['name'][0] ) );
+
 				//  No file name provided, file rejected
 				return;
 			}
 
 			if ( $_FILES['uploadFile']['error'][0] ) {
 				$this->set_upload_status( "failed", sprintf( __( "The following error happened during the upload of %s: %s", "ywau" ), $_FILES['uploadFile']['name'][0], $_FILES['uploadFile']['error'][0] ) );
+
 				//  there was an error
 				return;
 			}
@@ -233,12 +237,17 @@ if ( ! class_exists( 'YITH_WooCommerce_Additional_Uploads' ) ) {
 
 			//  Check if file extension is allowed
 			$allowed_ext_array = explode( ',', $this->allowed_extension );
-			$file_ext          = wp_check_filetype( $file_name )['ext'];
 
+			$check    = wp_check_filetype( $file_name );
+			$file_ext = '';
+			if ( ! empty( $check['ext'] ) ) {
+				$file_ext = $check['ext'];
+			}
 
-			if ( ( count( $allowed_ext_array ) > 0 ) && ( ! in_array( $file_ext, $allowed_ext_array ) ) ) {
+			if ( ( ! empty( $file_ext ) ) && ( ! empty( $this->allowed_extension ) ) && ( count( $allowed_ext_array ) > 0 ) && ( ! in_array( $file_ext, $allowed_ext_array ) ) ) {
+
 				//  File extension not allowed
-				$this->set_upload_status( "failed", sprintf( __( "The format of the %s file is not valid. The allowed extensions are: %s.", "ywau" ),
+				$this->set_upload_status( "failed", sprintf( __( "The format of the file %s is not valid. The allowed extensions are: %s.", "ywau" ),
 					$_FILES['uploadFile']['name'][0],
 					$this->allowed_extension ) );
 
@@ -248,7 +257,7 @@ if ( ! class_exists( 'YITH_WooCommerce_Additional_Uploads' ) ) {
 			$max_size_byte = 1048576 * $this->max_size; //  max size in bytes
 
 			if ( $this->max_size && ( $_FILES['uploadFile']['size'][0] > $max_size_byte ) ) {
-				$this->set_upload_status( "failed", sprintf( __( "The %s file has not been accepted, the maximum dimension is %s MB.", "ywau" ), $_FILES['uploadFile']['name'][0], $this->max_size ) );
+				$this->set_upload_status( "failed", sprintf( __( "The file %s has not been accepted, the maximum dimension is %s MB.", "ywau" ), $_FILES['uploadFile']['name'][0], $this->max_size ) );
 
 				//  File size not allowed
 				return;
@@ -271,7 +280,7 @@ if ( ! class_exists( 'YITH_WooCommerce_Additional_Uploads' ) ) {
 					//  store reference to uploaded item on cart
 					WC()->session->set( "ywau_order_file_uploaded", $relative_path );
 				}
-				$this->set_upload_status( "success", sprintf( __( "The %s file has been included in the current order. Your order is now being processed.", "ywau" ), $_FILES['uploadFile']['name'][0] ) );
+				$this->set_upload_status( "success", sprintf( __( "The file %s has been included in the current order. Your order is now being processed.", "ywau" ), $_FILES['uploadFile']['name'][0] ) );
 			}
 		}
 
@@ -463,7 +472,7 @@ if ( ! class_exists( 'YITH_WooCommerce_Additional_Uploads' ) ) {
 				$uploaded_file = $this->order_has_file_uploaded( $order_id );
 				if ( ! empty( $uploaded_file ) ) {
 					$allow_upload = false;
-					echo '<span class="success-message">' . sprintf( __( "The %s file has been included in the current order. Your order is now being processed.", "ywau" ), basename( $uploaded_file ) ) . '</span>';
+					echo '<span class="success-message">' . sprintf( __( "The file %s has been included in the current order. Your order is now being processed.", "ywau" ), basename( $uploaded_file ) ) . '</span>';
 				}
 			}
 
@@ -475,7 +484,7 @@ if ( ! class_exists( 'YITH_WooCommerce_Additional_Uploads' ) ) {
 			<span
 				class="upload-file-title"><?php _e( "You can customize your order sending a file.", "ywau" ); ?>
 				<?php if ( $this->allowed_extension ):
-					_e( sprintf( "You can send a file in one of the following formats: %s.", $this->allowed_extension ), "ywau" ); ?>
+					_e( sprintf( "Choose one of the following formats: %s.", $this->allowed_extension ), "ywau" ); ?>
 				<?php endif; ?>
 				</span>
 

@@ -3,8 +3,8 @@
 Contributors: yithemes
 Tags: woocommerce, e-commerce, ecommerce, shop, file upload, attach file, append file,
 Requires at least: 4.0
-Tested up to: 4.2.2
-Stable tag: 1.0.0
+Tested up to: 4.2.3
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,10 @@ YITH WooCommerce Additional Uploads will add a new tab called "Additional Upload
 4. Add a file to the order in the order page.
 
 == Changelog ==
+
+= Version 1.0.1 - RELEASED: JUL 24, 2015 ==
+
+* Fix : minor bug fix.
 
 = 1.0.0 =
 
