@@ -21,7 +21,7 @@ A concrete way to customize your orders: upload a file with your image and compl
 * Allow users to upload a file to the order in the checkout page.
 * Allow users to upload a file to the order in the order page.
 
-For a more detailed list of options and features of the plugin, please look at the [official documentation](http://yithemes.com/docs-plugins/yith-woocommerce-pdf-invoice/ "Yith WooCommerce PDF Invoice official documentation").
+For a more detailed list of options and features of the plugin, please look at the [official documentation](http://yithemes.com/docs-plugins/yith-woocommerce-uploads "YITH WooCommerce Uploads official documentation").
 
 Discover all the features of the plugin and install it in your theme: the result will be extremely satisfying.
 
