@@ -3,8 +3,8 @@
 Contributors: yithemes
 Tags: upload, uploads, up load, up loads, woocommerce upload, woocommerce uploads, woocommerce, e-commerce, ecommerce, shop, file upload, file uploads, zip upload, jpg upload, image upload, pdf upload, attach file, append file, yith, yit, yithemes, attachment, attachments, cart upload, product upload, checkout upload
 Requires at least: 4.0
-Tested up to: 4.2.3
-Stable tag: 1.0.1
+Tested up to: 4.2.4
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,6 +20,8 @@ A concrete way to customize your orders: upload a file with your image and compl
 * Allow users to upload a file to the order in the cart page.
 * Allow users to upload a file to the order in the checkout page.
 * Allow users to upload a file to the order in the order page.
+
+For a more detailed list of options and features of the plugin, please look at the [official documentation](http://yithemes.com/docs-plugins/yith-woocommerce-pdf-invoice/ "Yith WooCommerce PDF Invoice official documentation").
 
 Discover all the features of the plugin and install it in your theme: the result will be extremely satisfying.
 
@@ -43,6 +45,10 @@ YITH WooCommerce Uploads will add a new tab called "Additional Uploads" inside t
 4. Add a file to the order in the order page.
 
 == Changelog ==
+
+= Version 1.0.2 - RELEASED: AUG 12, 2015 =
+
+* Tweak: update YITH Plugin framework.
 
 = Version 1.0.1 - RELEASED: JUL 24, 2015 =
 

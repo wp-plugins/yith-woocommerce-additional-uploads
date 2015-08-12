@@ -80,7 +80,7 @@ if ( ! class_exists( 'YWAU_Plugin_FW_Loader' ) ) {
 			add_action( 'admin_menu', array( $this, 'register_panel' ), 5 );
 
 			//  Show plugin premium tab
-			add_action( 'yith_question_answer_premium', array( $this, 'premium_tab' ) );
+			add_action( 'yith_additional_uploads_premium', array( $this, 'premium_tab' ) );
 
 			/**
 			 * register plugin to licence/update system

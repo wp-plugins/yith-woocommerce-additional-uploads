@@ -18,7 +18,7 @@ return array(
     'premium-landing' => array(
         'home' => array(
             'type'   => 'custom_tab',
-            'action' => 'yith_pdf_invoice_premium'
+            'action' => 'yith_additional_uploads_premium'
         )
     )
 );
