@@ -28,12 +28,12 @@ if ( ! class_exists( 'YWAU_Plugin_FW_Loader' ) ) {
 		/**
 		 * @var string Premium version landing link
 		 */
-		protected $_premium_landing = 'http://yithemes.com/themes/plugins/yith-woocommerce-additional-uploads/';
+		protected $_premium_landing = 'http://yithemes.com/themes/plugins/yith-woocommerce-uploads/';
 
 		/**
 		 * @var string Plugin official documentation
 		 */
-		protected $_official_documentation = 'http://yithemes.com/docs-plugins/yith-woocommerce-additional-uploads/';
+		protected $_official_documentation = 'http://yithemes.com/docs-plugins/yith-woocommerce-uploads/';
 
 		/**
 		 * @var string Plugin panel page

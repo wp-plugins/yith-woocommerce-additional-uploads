@@ -3,8 +3,8 @@
  * Premium Tab
  *
  * @author Your Inspiration Themes
- * @package YITH WooCommerce Additional Uploads
- * @version 1.0.0
+ * @package YITH WooCommerce Uploads
+ * @version 1.0.2
  */
 
 /*
@@ -249,7 +249,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="landing-container">
             <div class="premium-cta">
                 <p>
-                    <?php echo sprintf( __('Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce Additional Uploads%2$s to benefit from all features!','yith-wcaf'),'<span class="highlight">','</span>' );?>
+                    <?php echo sprintf( __('Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce Uploads%2$s to benefit from all features!','yith-wcaf'),'<span class="highlight">','</span>' );?>
                 </p>
                 <a href="<?php echo $this->get_premium_landing_uri() ?>" target="_blank" class="premium-cta-button button btn">
                     <span class="highlight"><?php _e('UPGRADE','yith-wcaf');?></span>
@@ -394,7 +394,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="landing-container">
             <div class="premium-cta">
                 <p>
-                    <?php echo sprintf( __('Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce Additional Uploads%2$s to benefit from all features!','yith-wcaf'),'<span class="highlight">','</span>' );?>
+                    <?php echo sprintf( __('Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce Uploads%2$s to benefit from all features!','yith-wcaf'),'<span class="highlight">','</span>' );?>
                 </p>
                 <a href="<?php echo $this->get_premium_landing_uri() ?>" target="_blank" class="premium-cta-button button btn">
                     <span class="highlight"><?php _e('UPGRADE','yith-wcaf');?></span>
