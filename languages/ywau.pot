@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YIT WooCommerce Advanced Reviews\n"
-"POT-Creation-Date: 2015-08-12 15:49+0200\n"
+"POT-Creation-Date: 2015-08-27 11:47+0200\n"
 "PO-Revision-Date: 2015-05-11 14:28+0100\n"
 "Last-Translator: \n"
 "Language-Team: Your Inspiration Themes <plugins@yithemes.com>\n"
@@ -187,8 +187,8 @@ msgstr ""
 #: ../templates/admin/premium.php:252 ../templates/admin/premium.php:397
 #, php-format
 msgid ""
-"Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce Additional Uploads"
-"%2$s to benefit from all features!"
+"Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce Uploads%2$s to "
+"benefit from all features!"
 msgstr ""
 
 #: ../templates/admin/premium.php:255 ../templates/admin/premium.php:400
