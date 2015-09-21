@@ -3,6 +3,7 @@
     visibility: hidden;
     width: 0;
     height: 0;
+    float: left;    padding: 0 15px;
 }
 
 #uploadFileList {
@@ -74,6 +75,7 @@ div.upload-items input[name="submit-files"] {
     float: left;
     margin-left: 5px;
     border-radius: 3px;
+    padding: 0 15px;
 }
 
 span.uploaded-filename {

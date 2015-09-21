@@ -223,7 +223,7 @@ if ( ! class_exists( 'YWAU_Plugin_FW_Loader' ) ) {
 
 			$premium_message = defined( 'YITH_YWAU_PREMIUM' )
 				? ''
-				: __( 'YITH WooCommerce Additional Uploads is available in an outstanding PREMIUM version with many new options, discover it now.', 'ywau' ) .
+				: __( 'YITH WooCommerce Uploads is available in an outstanding PREMIUM version with many new options, discover it now.', 'ywau' ) .
 				  ' <a href="' . $this->get_premium_landing_uri() . '">' . __( 'Premium version', 'ywau' ) . '</a>';
 
 			$args[] = array(
@@ -231,8 +231,8 @@ if ( ! class_exists( 'YWAU_Plugin_FW_Loader' ) ) {
 				'pointer_id' => 'yith_woocommerce_additional_uploads',
 				'target'     => '#toplevel_page_yit_plugin_panel',
 				'content'    => sprintf( '<h3> %s </h3> <p> %s </p>',
-					__( 'YITH WooCommerce Additional Uploads', 'ywau' ),
-					__( 'In YIT Plugins tab you can find YITH WooCommerce Additional Uploads options.<br> From this menu you can access all settings of YITH plugins activated.', 'ywau' ) . '<br>' . $premium_message
+					__( 'YITH WooCommerce Uploads', 'ywau' ),
+					__( 'In YIT Plugins tab you can find YITH WooCommerce Uploads options.<br> From this menu you can access all settings of YITH plugins activated.', 'ywau' ) . '<br>' . $premium_message
 				),
 				'position'   => array( 'edge' => 'left', 'align' => 'center' ),
 				'init'       => defined( 'YITH_YWAU_PREMIUM' ) ? YITH_YWAU_INIT : YITH_YWAU_FREE_INIT
