@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YIT WooCommerce Advanced Reviews\n"
-"POT-Creation-Date: 2015-08-14 16:12+0100\n"
+"POT-Creation-Date: 2015-10-29 14:26+0100\n"
 "PO-Revision-Date: 2015-05-11 14:28+0100\n"
 "Last-Translator: \n"
 "Language-Team: Your Inspiration Themes <plugins@yithemes.com>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.1\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_n:1,2;__ngettext:1,2;"
 "__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;"
 "_nx_noop:4c,1,2\n"
@@ -22,76 +22,76 @@ msgstr ""
 
 #: ../init.php:23
 msgid ""
-"YITH WooCommerce Additional Uploads is enabled but not effective. It "
-"requires WooCommerce in order to work."
+"YITH WooCommerce Uploads is enabled but not effective. It requires "
+"WooCommerce in order to work."
 msgstr ""
 
 #: ../init.php:31
 msgid ""
-"You can't activate the free version of YITH WooCommerce Additional Uploads "
-"while you are using the premium one."
+"You can't activate the free version of YITH WooCommerce Uploads while you "
+"are using the premium one."
 msgstr ""
 
-#: ../lib/class.yith-woocommerce-additional-uploads.php:182
+#: ../lib/class.yith-woocommerce-additional-uploads.php:207
 msgid "Upload file"
 msgstr ""
 
-#: ../lib/class.yith-woocommerce-additional-uploads.php:214
+#: ../lib/class.yith-woocommerce-additional-uploads.php:242
 #, php-format
 msgid ""
 "You have already sent a file for the current order, it is not possible to "
 "add the new file %s."
 msgstr ""
 
-#: ../lib/class.yith-woocommerce-additional-uploads.php:222
+#: ../lib/class.yith-woocommerce-additional-uploads.php:250
 #, php-format
 msgid "The name of the file %s has not been accepted."
 msgstr ""
 
-#: ../lib/class.yith-woocommerce-additional-uploads.php:229
+#: ../lib/class.yith-woocommerce-additional-uploads.php:257
 #, php-format
 msgid "The following error happened during the upload of %s: %s"
 msgstr ""
 
-#: ../lib/class.yith-woocommerce-additional-uploads.php:250
+#: ../lib/class.yith-woocommerce-additional-uploads.php:280
 #, php-format
 msgid "The format of the file %s is not valid. The allowed extensions are: %s."
 msgstr ""
 
-#: ../lib/class.yith-woocommerce-additional-uploads.php:260
+#: ../lib/class.yith-woocommerce-additional-uploads.php:290
 #, php-format
 msgid "The file %s has not been accepted, the maximum dimension is %s MB."
 msgstr ""
 
-#: ../lib/class.yith-woocommerce-additional-uploads.php:283
-#: ../lib/class.yith-woocommerce-additional-uploads.php:475
+#: ../lib/class.yith-woocommerce-additional-uploads.php:314
+#: ../lib/class.yith-woocommerce-additional-uploads.php:515
 #, php-format
 msgid ""
 "The file %s has been included in the current order. Your order is now being "
 "processed."
 msgstr ""
 
-#: ../lib/class.yith-woocommerce-additional-uploads.php:336
+#: ../lib/class.yith-woocommerce-additional-uploads.php:370
 msgid "The customer has sent a file."
 msgstr ""
 
-#: ../lib/class.yith-woocommerce-additional-uploads.php:337
+#: ../lib/class.yith-woocommerce-additional-uploads.php:371
 msgid "Download"
 msgstr ""
 
-#: ../lib/class.yith-woocommerce-additional-uploads.php:340
+#: ../lib/class.yith-woocommerce-additional-uploads.php:374
 msgid "There are no files attached to the order."
 msgstr ""
 
-#: ../lib/class.yith-woocommerce-additional-uploads.php:456
+#: ../lib/class.yith-woocommerce-additional-uploads.php:496
 msgid "An error occurred, the file has not been accepted."
 msgstr ""
 
-#: ../lib/class.yith-woocommerce-additional-uploads.php:485
+#: ../lib/class.yith-woocommerce-additional-uploads.php:525
 msgid "You can customize your order sending a file."
 msgstr ""
 
-#: ../lib/class.yith-woocommerce-additional-uploads.php:496
+#: ../lib/class.yith-woocommerce-additional-uploads.php:536
 msgid "Select file"
 msgstr ""
 
@@ -114,8 +114,8 @@ msgstr ""
 
 #: ../lib/class.ywau-plugin-fw-loader.php:226
 msgid ""
-"YITH WooCommerce Additional Uploads is available in an outstanding PREMIUM "
-"version with many new options, discover it now."
+"YITH WooCommerce Uploads is available in an outstanding PREMIUM version with "
+"many new options, discover it now."
 msgstr ""
 
 #: ../lib/class.ywau-plugin-fw-loader.php:227
@@ -123,13 +123,13 @@ msgid "Premium version"
 msgstr ""
 
 #: ../lib/class.ywau-plugin-fw-loader.php:234
-msgid "YITH WooCommerce Additional Uploads"
+msgid "YITH WooCommerce Uploads"
 msgstr ""
 
 #: ../lib/class.ywau-plugin-fw-loader.php:235
 msgid ""
-"In YIT Plugins tab you can find YITH WooCommerce Additional Uploads options."
-"<br> From this menu you can access all settings of YITH plugins activated."
+"In YIT Plugins tab you can find YITH WooCommerce Uploads options.<br> From "
+"this menu you can access all settings of YITH plugins activated."
 msgstr ""
 
 #: ../plugin-options/general-options.php:20
@@ -184,30 +184,30 @@ msgstr ""
 msgid "Use this option to allow users to attach a file even from the cart"
 msgstr ""
 
-#: ../templates/admin/premium.php:252 ../templates/admin/premium.php:397
+#: ../templates/admin/premium.php:258 ../templates/admin/premium.php:435
 #, php-format
 msgid ""
 "Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce Uploads%2$s to "
 "benefit from all features!"
 msgstr ""
 
-#: ../templates/admin/premium.php:255 ../templates/admin/premium.php:400
+#: ../templates/admin/premium.php:261 ../templates/admin/premium.php:438
 msgid "UPGRADE"
 msgstr ""
 
-#: ../templates/admin/premium.php:256 ../templates/admin/premium.php:401
+#: ../templates/admin/premium.php:262 ../templates/admin/premium.php:439
 msgid "to the premium version"
 msgstr ""
 
-#: ../templates/admin/premium.php:262
+#: ../templates/admin/premium.php:268
 msgid "Premium Features"
 msgstr ""
 
-#: ../templates/admin/premium.php:265 ../templates/admin/premium.php:270
+#: ../templates/admin/premium.php:271 ../templates/admin/premium.php:276
 msgid "Accept or reject"
 msgstr ""
 
-#: ../templates/admin/premium.php:273
+#: ../templates/admin/premium.php:279
 #, php-format
 msgid ""
 "Interact with your shop users that have attached a file to products. Verify "
@@ -216,11 +216,11 @@ msgid ""
 "users will be free to upload a new file."
 msgstr ""
 
-#: ../templates/admin/premium.php:283 ../templates/admin/premium.php:290
+#: ../templates/admin/premium.php:289 ../templates/admin/premium.php:296
 msgid "Upload by the product"
 msgstr ""
 
-#: ../templates/admin/premium.php:286
+#: ../templates/admin/premium.php:292
 #, php-format
 msgid ""
 " A more organized and intuitive upload. With the premium version of the "
@@ -228,11 +228,11 @@ msgid ""
 "let you work freely without any doubts about its correlated item. "
 msgstr ""
 
-#: ../templates/admin/premium.php:297 ../templates/admin/premium.php:302
+#: ../templates/admin/premium.php:303 ../templates/admin/premium.php:308
 msgid "Attachment customization"
 msgstr ""
 
-#: ../templates/admin/premium.php:305
+#: ../templates/admin/premium.php:311
 #, php-format
 msgid ""
 "Shop products are often different, and you could have the need to request to "
@@ -241,17 +241,17 @@ msgid ""
 "settings for each product of the shop. "
 msgstr ""
 
-#: ../templates/admin/premium.php:308
+#: ../templates/admin/premium.php:314
 msgid ""
 "And if you want to avoid some products to benefit from this feature, you "
 "will just have to click just once to deactivate the plugin's features."
 msgstr ""
 
-#: ../templates/admin/premium.php:318 ../templates/admin/premium.php:325
+#: ../templates/admin/premium.php:324 ../templates/admin/premium.php:331
 msgid "File removal"
 msgstr ""
 
-#: ../templates/admin/premium.php:321
+#: ../templates/admin/premium.php:327
 #, php-format
 msgid ""
 "Very often some of your users may want to change one of the attached files, "
@@ -260,11 +260,11 @@ msgid ""
 "want to allow users to %1$sremove%2$s attached files. "
 msgstr ""
 
-#: ../templates/admin/premium.php:332 ../templates/admin/premium.php:337
+#: ../templates/admin/premium.php:338 ../templates/admin/premium.php:343
 msgid "Attached notes"
 msgstr ""
 
-#: ../templates/admin/premium.php:340
+#: ../templates/admin/premium.php:346
 #, php-format
 msgid ""
 "Activate notes for each uploaded file to give your users the freedom to add "
@@ -272,11 +272,11 @@ msgid ""
 "%1$sinformation%2$s for your work, and the quality will just get better."
 msgstr ""
 
-#: ../templates/admin/premium.php:350 ../templates/admin/premium.php:357
+#: ../templates/admin/premium.php:356 ../templates/admin/premium.php:363
 msgid "Saving path"
 msgstr ""
 
-#: ../templates/admin/premium.php:353
+#: ../templates/admin/premium.php:359
 #, php-format
 msgid ""
 "Customize the saving path according to your needs. Decide whether to sort "
@@ -284,11 +284,11 @@ msgid ""
 "let you find easily and quickly the file you are looking for."
 msgstr ""
 
-#: ../templates/admin/premium.php:364 ../templates/admin/premium.php:369
+#: ../templates/admin/premium.php:370 ../templates/admin/premium.php:375
 msgid "Email notification"
 msgstr ""
 
-#: ../templates/admin/premium.php:372
+#: ../templates/admin/premium.php:378
 #, php-format
 msgid ""
 "Don't forgo the integrated email notification system of the premium version "
@@ -298,17 +298,48 @@ msgid ""
 "for a top-level service!"
 msgstr ""
 
-#: ../templates/admin/premium.php:382 ../templates/admin/premium.php:389
+#: ../templates/admin/premium.php:388 ../templates/admin/premium.php:395
 msgid "User interaction"
 msgstr ""
 
-#: ../templates/admin/premium.php:385
+#: ../templates/admin/premium.php:391
 #, php-format
 msgid ""
 "Take advantage of the comfortable email system that can easily and "
 "%1$squickly send messages%2$s about orders to your shop users. Write your "
 "messages and send them from the WooCommerce order detail page. Interact with "
 "your users to appear as the best vendor possible."
+msgstr ""
+
+#: ../templates/admin/premium.php:402 ../templates/admin/premium.php:407
+msgid "Upload pages"
+msgstr ""
+
+#: ../templates/admin/premium.php:410
+#, php-format
+msgid ""
+"It is up to you choosing when you want your users to upload necessary files, "
+"so you can choose where showing the upload button in your shop: in %1$scart"
+"%2$s page, in %1$scheckout%2$s page or in %1$s\"Thank you\"%2$s page, so "
+"that your users will always be offered the best purchase conditions."
+msgstr ""
+
+#: ../templates/admin/premium.php:420
+msgid " Single product"
+msgstr ""
+
+#: ../templates/admin/premium.php:423
+#, php-format
+msgid ""
+"Every product in your shop is different from the others for features and "
+"usage, so this means that not for all products you have to ask your "
+"customers for an attachment. This is the reason why the plugin gives you "
+"also the opportunity to disable file upload for the specified product or to "
+"%1$sset upload rules%2$s for it or for its %1$svariations%2$s."
+msgstr ""
+
+#: ../templates/admin/premium.php:427
+msgid "Single product"
 msgstr ""
 
 #~ msgid "This review is closed for replies"

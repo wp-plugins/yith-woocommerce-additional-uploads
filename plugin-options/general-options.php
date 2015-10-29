@@ -17,14 +17,14 @@ $general_options = array(
 	'general' => array(
 
 		'section_general_settings'             => array(
-			'name' => __( 'General settings', 'ywau' ),
+			'name' => __( 'General settings', 'yith-woocommerce-additional-uploads' ),
 			'type' => 'title',
 			'id'   => 'ywau_section_general'
 		),
 		'ywau_max_file_size'                   => array(
-			'name'              => __( 'Maximum size of the file', 'ywau' ),
+			'name'              => __( 'Maximum size of the file', 'yith-woocommerce-additional-uploads' ),
 			'type'              => 'number',
-			'desc'              => __( 'Maximum size in MB of the file that customers can send. Set to 0 to have no limits for the file size.', 'ywau' ),
+			'desc'              => __( 'Maximum size in MB of the file that customers can send. Set to 0 to have no limits for the file size.', 'yith-woocommerce-additional-uploads' ),
 			'id'                => 'ywau_max_file_size',
 			'default'           => '1',
 			'custom_attributes' => array(
@@ -34,28 +34,28 @@ $general_options = array(
 			)
 		),
 		'ywau_allowed_extension'               => array(
-			'name'    => __( 'Allowed extensions', 'ywau' ),
+			'name'    => __( 'Allowed extensions', 'yith-woocommerce-additional-uploads' ),
 			'type'    => 'text',
-			'desc'    => __( 'Set the file formats allowed, writing the extensions divided by comma (e.g., jpg,png,gif).', 'ywau' ),
+			'desc'    => __( 'Set the file formats allowed, writing the extensions divided by comma (e.g., jpg,png,gif).', 'yith-woocommerce-additional-uploads' ),
 			'id'      => 'ywau_allowed_extension',
 			'default' => 'jpg;png',
 		),
 		'ywau_allowed_order_status_completed'  => array(
-			"name"          => __( 'Order status', 'ywau' ),
-			"desc"          => __( 'Completed', 'ywau' ),
+			"name"          => __( 'Order status', 'yith-woocommerce-additional-uploads' ),
+			"desc"          => __( 'Completed', 'yith-woocommerce-additional-uploads' ),
 			"id"            => "ywau_allow_wc-completed",
 			"type"          => "checkbox",
 			'checkboxgroup' => 'start'
 		),
 		'ywau_allowed_order_status_on_hold'    => array(
-			'desc'          => __( 'On Hold', 'ywau' ),
+			'desc'          => __( 'On Hold', 'yith-woocommerce-additional-uploads' ),
 			'id'            => 'ywau_allow_wc-on-hold',
 			'default'       => 'yes',
 			'type'          => 'checkbox',
 			'checkboxgroup' => ''
 		),
 		'ywau_allowed_order_status_pending'    => array(
-			'desc'          => __( 'Pending payment', 'ywau' ),
+			'desc'          => __( 'Pending payment', 'yith-woocommerce-additional-uploads' ),
 			'id'            => 'ywau_allow_wc-pending',
 			'default'       => 'no',
 			'type'          => 'checkbox',
@@ -69,7 +69,7 @@ $general_options = array(
 			'checkboxgroup' => 'end',
 		),
 		'ywau_allow_upload_on_cart'            => array(
-			'name'    => __( 'Allow cart attachment', 'ywau' ),
+			'name'    => __( 'Allow cart attachment', 'yith-woocommerce-additional-uploads' ),
 			'desc'    => __( 'Use this option to allow users to attach a file even from the cart', 'yqau' ),
 			'id'      => 'ywau_allow_upload_on_cart',
 			'default' => 'no',

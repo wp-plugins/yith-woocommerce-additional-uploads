@@ -204,7 +204,7 @@ if (!class_exists('YITH_WooCommerce_Additional_Uploads')) {
 
                 $actions['upload-file'] = array(
                     'url' => $order->get_view_order_url(),
-                    'name' => __('Upload file', 'ywau')
+                    'name' => __('Upload file', 'yith-woocommerce-additional-uploads')
                 );
             }
 
@@ -239,7 +239,7 @@ if (!class_exists('YITH_WooCommerce_Additional_Uploads')) {
             $order_id = intval($_POST["order-id"]);
 
             if ($this->order_has_file_uploaded($order_id)) {
-                $this->set_upload_status("rejected", sprintf(__("You have already sent a file for the current order, it is not possible to add the new file %s.", "ywau"), $_FILES['uploadFile']['name'][0]));
+                $this->set_upload_status("rejected", sprintf(__("You have already sent a file for the current order, it is not possible to add the new file %s.", 'yith-woocommerce-additional-uploads'), $_FILES['uploadFile']['name'][0]));
 
                 //  order has current file uploaded, you can't add a new file.
 
@@ -247,14 +247,14 @@ if (!class_exists('YITH_WooCommerce_Additional_Uploads')) {
             }
 
             if (!$_FILES['uploadFile']['name'][0]) {
-                $this->set_upload_status("failed", sprintf(__("The name of the file %s has not been accepted.", "ywau"), $_FILES['uploadFile']['name'][0]));
+                $this->set_upload_status("failed", sprintf(__("The name of the file %s has not been accepted.", 'yith-woocommerce-additional-uploads'), $_FILES['uploadFile']['name'][0]));
 
                 //  No file name provided, file rejected
                 return;
             }
 
             if ($_FILES['uploadFile']['error'][0]) {
-                $this->set_upload_status("failed", sprintf(__("The following error happened during the upload of %s: %s", "ywau"), $_FILES['uploadFile']['name'][0], $_FILES['uploadFile']['error'][0]));
+                $this->set_upload_status("failed", sprintf(__("The following error happened during the upload of %s: %s", 'yith-woocommerce-additional-uploads'), $_FILES['uploadFile']['name'][0], $_FILES['uploadFile']['error'][0]));
 
                 //  there was an error
                 return;
@@ -277,7 +277,7 @@ if (!class_exists('YITH_WooCommerce_Additional_Uploads')) {
             if ((!empty($file_ext)) && (!empty($this->allowed_extension)) && (count($allowed_ext_array) > 0) && (!in_array($file_ext, $allowed_ext_array))) {
 
                 //  File extension not allowed
-                $this->set_upload_status("failed", sprintf(__("The format of the file %s is not valid. The allowed extensions are: %s.", "ywau"),
+                $this->set_upload_status("failed", sprintf(__("The format of the file %s is not valid. The allowed extensions are: %s.", 'yith-woocommerce-additional-uploads'),
                     $_FILES['uploadFile']['name'][0],
                     $this->allowed_extension));
 
@@ -287,7 +287,7 @@ if (!class_exists('YITH_WooCommerce_Additional_Uploads')) {
             $max_size_byte = 1048576 * $this->max_size; //  max size in bytes
 
             if ($this->max_size && ($_FILES['uploadFile']['size'][0] > $max_size_byte)) {
-                $this->set_upload_status("failed", sprintf(__("The file %s has not been accepted, the maximum dimension is %s MB.", "ywau"), $_FILES['uploadFile']['name'][0], $this->max_size));
+                $this->set_upload_status("failed", sprintf(__("The file %s has not been accepted, the maximum dimension is %s MB.", 'yith-woocommerce-additional-uploads'), $_FILES['uploadFile']['name'][0], $this->max_size));
 
                 //  File size not allowed
                 return;
@@ -311,7 +311,7 @@ if (!class_exists('YITH_WooCommerce_Additional_Uploads')) {
                     //  store reference to uploaded item on cart
                     WC()->session->set("ywau_order_file_uploaded", $relative_path);
                 }
-                $this->set_upload_status("success", sprintf(__("The file %s has been included in the current order. Your order is now being processed.", "ywau"), $_FILES['uploadFile']['name'][0]));
+                $this->set_upload_status("success", sprintf(__("The file %s has been included in the current order. Your order is now being processed.", 'yith-woocommerce-additional-uploads'), $_FILES['uploadFile']['name'][0]));
             }
         }
 
@@ -367,11 +367,11 @@ if (!class_exists('YITH_WooCommerce_Additional_Uploads')) {
             echo '<div id="ywau_uploaded_file">';
 
             if ($this->order_has_file_uploaded($order_id)) {
-                echo '<span class="file-uploaded">' . __("The customer has sent a file.", "ywau") . '</span>';
-                echo '<a class="download-uploaded-file" href="' . admin_url("admin.php?action=" . YWAU_ACTION_DOWNLOAD_FILE . "&order_id=$order_id") . '">' . __("Download", "ywau") . '</a>';
+                echo '<span class="file-uploaded">' . __("The customer has sent a file.", 'yith-woocommerce-additional-uploads') . '</span>';
+                echo '<a class="download-uploaded-file" href="' . admin_url("admin.php?action=" . YWAU_ACTION_DOWNLOAD_FILE . "&order_id=$order_id") . '">' . __("Download", 'yith-woocommerce-additional-uploads') . '</a>';
 
             } else {
-                echo '<span class="file-not-uploaded">' . __("There are no files attached to the order.", "ywau") . '</span>';
+                echo '<span class="file-not-uploaded">' . __("There are no files attached to the order.", 'yith-woocommerce-additional-uploads') . '</span>';
             }
             echo "</div>";
 
@@ -493,7 +493,7 @@ if (!class_exists('YITH_WooCommerce_Additional_Uploads')) {
 
                             echo '<span class="error-message">' . esc_html($_POST["upload-message"]) . '</span>';
                         } else {
-                            echo '<span class="error-message">' . __("An error occurred, the file has not been accepted.", "ywau") . '</span>';
+                            echo '<span class="error-message">' . __("An error occurred, the file has not been accepted.", 'yith-woocommerce-additional-uploads') . '</span>';
                         }
 
                         break;
@@ -512,7 +512,7 @@ if (!class_exists('YITH_WooCommerce_Additional_Uploads')) {
                 $uploaded_file = $this->order_has_file_uploaded($order_id);
                 if (!empty($uploaded_file)) {
                     $allow_upload = false;
-                    echo '<span class="success-message">' . sprintf(__("The file %s has been included in the current order. Your order is now being processed.", "ywau"), basename($uploaded_file)) . '</span>';
+                    echo '<span class="success-message">' . sprintf(__("The file %s has been included in the current order. Your order is now being processed.", 'yith-woocommerce-additional-uploads'), basename($uploaded_file)) . '</span>';
                 }
             }
 
@@ -522,9 +522,9 @@ if (!class_exists('YITH_WooCommerce_Additional_Uploads')) {
 
             ?>
             <span
-                class="upload-file-title"><?php _e("You can customize your order sending a file.", "ywau"); ?>
+                class="upload-file-title"><?php _e("You can customize your order sending a file.", 'yith-woocommerce-additional-uploads'); ?>
                 <?php if ($this->allowed_extension):
-                    _e(sprintf("Choose one of the following formats: %s.", $this->allowed_extension), "ywau"); ?>
+                    _e(sprintf("Choose one of the following formats: %s.", $this->allowed_extension), 'yith-woocommerce-additional-uploads'); ?>
                 <?php endif; ?>
 				</span>
 
@@ -533,7 +533,7 @@ if (!class_exists('YITH_WooCommerce_Additional_Uploads')) {
                 <input type="hidden" name="order-id" value="<?php echo $order_id; ?>">
 
                 <div class="upload-items">
-                    <input type="button" value="<?php _e("Select file", "ywau"); ?>" id="do_uploadFile"/>
+                    <input type="button" value="<?php _e("Select file", 'yith-woocommerce-additional-uploads'); ?>" id="do_uploadFile"/>
                     <input type="file" name="uploadFile[]" id="uploadFile" accept="image/*"/>
                 </div>
 

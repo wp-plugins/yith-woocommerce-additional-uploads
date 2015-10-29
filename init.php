@@ -4,114 +4,120 @@ Plugin Name: YITH WooCommerce Uploads
 Plugin URI: http://yithemes.com
 Description: A concrete way to customize your orders, load a file with your images, and complete your order according to your needs.
 Author: Yithemes
-Text Domain: ywau
-Version: 1.0.4
+Text Domain: yith-woocommerce-additional-uploads
+Version: 1.0.5
 Author URI: http://yithemes.com/
 */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+if ( ! defined ( 'ABSPATH' ) ) {
+    exit;
 } // Exit if accessed directly
 
-if ( ! function_exists( 'is_plugin_active' ) ) {
-	require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+if ( ! function_exists ( 'is_plugin_active' ) ) {
+    require_once ( ABSPATH . 'wp-admin/includes/plugin.php' );
 }
 
-function yith_ywau_install_woocommerce_admin_notice() {
-	?>
-	<div class="error">
-		<p><?php _e( 'YITH WooCommerce Uploads is enabled but not effective. It requires WooCommerce in order to work.', 'yit' ); ?></p>
-	</div>
-<?php
+function yith_ywau_install_woocommerce_admin_notice () {
+    ?>
+    <div class="error">
+        <p><?php _e ( 'YITH WooCommerce Uploads is enabled but not effective. It requires WooCommerce in order to work.', 'yit' ); ?></p>
+    </div>
+    <?php
 }
 
-function yith_ywau_install_free_admin_notice() {
-	?>
-	<div class="error">
-		<p><?php _e( 'You can\'t activate the free version of YITH WooCommerce Uploads while you are using the premium one.', 'yit' ); ?></p>
-	</div>
-<?php
+function yith_ywau_install_free_admin_notice () {
+    ?>
+    <div class="error">
+        <p><?php _e ( 'You can\'t activate the free version of YITH WooCommerce Uploads while you are using the premium one.', 'yit' ); ?></p>
+    </div>
+    <?php
 }
 
-if ( ! function_exists( 'yith_plugin_registration_hook' ) ) {
-	require_once 'plugin-fw/yit-plugin-registration-hook.php';
+if ( ! function_exists ( 'yith_plugin_registration_hook' ) ) {
+    require_once 'plugin-fw/yit-plugin-registration-hook.php';
 }
-register_activation_hook( __FILE__, 'yith_plugin_registration_hook' );
+register_activation_hook ( __FILE__, 'yith_plugin_registration_hook' );
 
 //region    ****    Define constants
 
-if ( ! defined( 'YITH_YWAU_FREE_INIT' ) ) {
-	define( 'YITH_YWAU_FREE_INIT', plugin_basename( __FILE__ ) );
+if ( ! defined ( 'YITH_YWAU_FREE_INIT' ) ) {
+    define ( 'YITH_YWAU_FREE_INIT', plugin_basename ( __FILE__ ) );
 }
 
-if ( ! defined( 'YITH_YWAU_VERSION' ) ) {
-	define( 'YITH_YWAU_VERSION', '1.0.4' );
+if ( ! defined ( 'YITH_YWAU_VERSION' ) ) {
+    define ( 'YITH_YWAU_VERSION', '1.0.5' );
 }
 
-if ( ! defined( 'YITH_YWAU_FILE' ) ) {
-	define( 'YITH_YWAU_FILE', __FILE__ );
+if ( ! defined ( 'YITH_YWAU_FILE' ) ) {
+    define ( 'YITH_YWAU_FILE', __FILE__ );
 }
 
-if ( ! defined( 'YITH_YWAU_DIR' ) ) {
-	define( 'YITH_YWAU_DIR', plugin_dir_path( __FILE__ ) );
+if ( ! defined ( 'YITH_YWAU_DIR' ) ) {
+    define ( 'YITH_YWAU_DIR', plugin_dir_path ( __FILE__ ) );
 }
 
-if ( ! defined( 'YITH_YWAU_URL' ) ) {
-	define( 'YITH_YWAU_URL', plugins_url( '/', __FILE__ ) );
+if ( ! defined ( 'YITH_YWAU_URL' ) ) {
+    define ( 'YITH_YWAU_URL', plugins_url ( '/', __FILE__ ) );
 }
 
-if ( ! defined( 'YITH_YWAU_ASSETS_URL' ) ) {
-	define( 'YITH_YWAU_ASSETS_URL', YITH_YWAU_URL . 'assets' );
+if ( ! defined ( 'YITH_YWAU_ASSETS_URL' ) ) {
+    define ( 'YITH_YWAU_ASSETS_URL', YITH_YWAU_URL . 'assets' );
 }
 
-if ( ! defined( 'YITH_YWAU_TEMPLATES_DIR' ) ) {
-	define( 'YITH_YWAU_TEMPLATES_DIR', YITH_YWAU_DIR . 'templates' );
+if ( ! defined ( 'YITH_YWAU_TEMPLATES_DIR' ) ) {
+    define ( 'YITH_YWAU_TEMPLATES_DIR', YITH_YWAU_DIR . 'templates' );
 }
 
-if ( ! defined( 'YITH_YWAU_ASSETS_IMAGES_URL' ) ) {
-	define( 'YITH_YWAU_ASSETS_IMAGES_URL', YITH_YWAU_ASSETS_URL . '/images/' );
+if ( ! defined ( 'YITH_YWAU_ASSETS_IMAGES_URL' ) ) {
+    define ( 'YITH_YWAU_ASSETS_IMAGES_URL', YITH_YWAU_ASSETS_URL . '/images/' );
 }
 
-$wp_upload_dir = wp_upload_dir();
+$wp_upload_dir = wp_upload_dir ();
 
-if ( ! defined( 'YITH_YWAU_SAVE_DIR' ) ) {
-	define( 'YITH_YWAU_SAVE_DIR',  $wp_upload_dir['basedir']  . '/yith-additional-uploads/' );
+if ( ! defined ( 'YITH_YWAU_SAVE_DIR' ) ) {
+    define ( 'YITH_YWAU_SAVE_DIR', $wp_upload_dir[ 'basedir' ] . '/yith-additional-uploads/' );
 }
 
-if ( ! defined( 'YITH_YWAU_SAVE_URL' ) ) {
-	define( 'YITH_YWAU_SAVE_URL', $wp_upload_dir['baseurl'] . '/yith-additional-uploads/' );
+if ( ! defined ( 'YITH_YWAU_SAVE_URL' ) ) {
+    define ( 'YITH_YWAU_SAVE_URL', $wp_upload_dir[ 'baseurl' ] . '/yith-additional-uploads/' );
 }
 //endregion
 
-function yith_ywau_init() {
+/* Plugin Framework Version Check */
+if ( ! function_exists ( 'yit_maybe_plugin_fw_loader' ) && file_exists ( YITH_YWAU_DIR . 'plugin-fw/init.php' ) ) {
+    require_once ( YITH_YWAU_DIR . 'plugin-fw/init.php' );
+}
+yit_maybe_plugin_fw_loader ( YITH_YWAU_DIR );
 
-	/**
-	 * Load text domain and start plugin
-	 */
-	load_plugin_textdomain( 'ywau', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+function yith_ywau_init () {
 
-	require_once( YITH_YWAU_DIR . 'lib/class.yith-woocommerce-additional-uploads.php' );
-	require_once( YITH_YWAU_DIR . 'lib/class.ywau-plugin-fw-loader.php' );
-	require_once( YITH_YWAU_DIR . 'functions.php' );
+    /**
+     * Load text domain and start plugin
+     */
+    load_plugin_textdomain ( 'yith-woocommerce-additional-uploads', false, dirname ( plugin_basename ( __FILE__ ) ) . '/languages/' );
 
-	YWAU_Plugin_FW_Loader::get_instance();
+    require_once ( YITH_YWAU_DIR . 'lib/class.yith-woocommerce-additional-uploads.php' );
+    require_once ( YITH_YWAU_DIR . 'lib/class.ywau-plugin-fw-loader.php' );
+    require_once ( YITH_YWAU_DIR . 'functions.php' );
 
-	YITH_WooCommerce_Additional_Uploads::get_instance();
+    YWAU_Plugin_FW_Loader::get_instance ();
+
+    YITH_WooCommerce_Additional_Uploads::get_instance ();
 }
 
-add_action( 'yith_ywau_init', 'yith_ywau_init' );
+add_action ( 'yith_ywau_init', 'yith_ywau_init' );
 
 
-function yith_ywau_install() {
+function yith_ywau_install () {
 
-	if ( ! function_exists( 'WC' ) ) {
-		add_action( 'admin_notices', 'yith_ywau_install_woocommerce_admin_notice' );
-	} elseif ( defined( 'YITH_YWAU_PREMIUM' ) ) {
-		add_action( 'admin_notices', 'yith_ywau_install_free_admin_notice' );
-		deactivate_plugins( plugin_basename( __FILE__ ) );
-	} else {
-		do_action( 'yith_ywau_init' );
-	}
+    if ( ! function_exists ( 'WC' ) ) {
+        add_action ( 'admin_notices', 'yith_ywau_install_woocommerce_admin_notice' );
+    } elseif ( defined ( 'YITH_YWAU_PREMIUM' ) ) {
+        add_action ( 'admin_notices', 'yith_ywau_install_free_admin_notice' );
+        deactivate_plugins ( plugin_basename ( __FILE__ ) );
+    } else {
+        do_action ( 'yith_ywau_init' );
+    }
 }
 
-add_action( 'plugins_loaded', 'yith_ywau_install', 11 );
+add_action ( 'plugins_loaded', 'yith_ywau_install', 11 );

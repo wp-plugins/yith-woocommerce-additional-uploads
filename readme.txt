@@ -3,8 +3,8 @@
 Contributors: yithemes
 Tags: upload, uploads, up load, up loads, woocommerce upload, woocommerce uploads, woocommerce, e-commerce, ecommerce, shop, file upload, file uploads, zip upload, jpg upload, image upload, pdf upload, attach file, append file, yith, yit, yithemes, attachment, attachments, cart upload, product upload, checkout upload
 Requires at least: 4.0
-Tested up to: 4.3
-Stable tag: 1.0.4
+Tested up to: 4.3.1
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -53,7 +53,6 @@ YITH WooCommerce Uploads will add a new tab called "Uploads" in the YIT Plugins 
 2. Upload the plugin folder into the `wp-content/plugins/` directory of your WordPress site.
 3. Activate `YITH WooCommerce Uploads` from Plugins page.
 
-
 == Frequently Asked Questions ==
 
 = Is it compatible with all WordPress themes? =
@@ -77,7 +76,9 @@ You can get more features with the premium version of YITH WooCommerce Uploads, 
 
 = How can I try the full-featured plugin? =
 
-If you want to see a demonstration version of the premium plugin, you can see that in [this page](http://plugins.yithemes.com/yith-woocommerce-uploads). Browse it and try all options available so that you can see how your plugin looks like.
+If you want to see a demonstration version of the premium plugin, you can see that in [this page](http://plugins.yithemes.com/yith-woocommerce-uploads).
+Browse it and try all options available so that you can see how your plugin looks like.
+
 == Screenshots ==
 
 1. General settings of the plugin. Maximum size permitted, allowed file extensions and order status in which it is possible to upload a file.
@@ -86,6 +87,11 @@ If you want to see a demonstration version of the premium plugin, you can see th
 4. Attach a file to the order in WooCommerce order page.
 
 == Changelog ==
+
+= Version 1.0.5 - RELEASED: OCT 29, 2015 =
+
+* Update: changed text-domain from ywau to yith-woocommerce-additional-uploads
+* Update: YITH plugin framework
 
 = Version 1.0.4 - RELEASED: SEP 21, 2015 =
 

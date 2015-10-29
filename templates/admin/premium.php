@@ -255,28 +255,28 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="landing-container">
             <div class="premium-cta">
                 <p>
-                    <?php echo sprintf( __('Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce Uploads%2$s to benefit from all features!','ywau'),'<span class="highlight">','</span>' );?>
+                    <?php echo sprintf( __('Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce Uploads%2$s to benefit from all features!','yith-woocommerce-additional-uploads'),'<span class="highlight">','</span>' );?>
                 </p>
                 <a href="<?php echo $this->get_premium_landing_uri() ?>" target="_blank" class="premium-cta-button button btn">
-                    <span class="highlight"><?php _e('UPGRADE','ywau');?></span>
-                    <span><?php _e('to the premium version','ywau');?></span>
+                    <span class="highlight"><?php _e('UPGRADE','yith-woocommerce-additional-uploads');?></span>
+                    <span><?php _e('to the premium version','yith-woocommerce-additional-uploads');?></span>
                 </a>
             </div>
         </div>
     </div>
     <div class="one section section-even clear">
-        <h1><?php _e('Premium Features','ywau');?></h1>
+        <h1><?php _e('Premium Features','yith-woocommerce-additional-uploads');?></h1>
         <div class="landing-container">
             <div class="col-1">
-                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>01.png" alt="<?php _e( 'Accept or reject','ywau') ?>" />
+                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>01.png" alt="<?php _e( 'Accept or reject','yith-woocommerce-additional-uploads') ?>" />
             </div>
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>01-icon.png" alt="icon 01"/>
-                    <h2><?php _e('Accept or reject','ywau');?></h2>
+                    <h2><?php _e('Accept or reject','yith-woocommerce-additional-uploads');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf(__('Interact with your shop users that have attached a file to products. Verify the quality of the sent images or, the quality of every file you have received, and %1$saccept%2$s or %1$sreject%2$s them. With the second case, users will be free to upload a new file.', 'ywau'), '<b>', '</b>');?>
+                    <?php echo sprintf(__('Interact with your shop users that have attached a file to products. Verify the quality of the sent images or, the quality of every file you have received, and %1$saccept%2$s or %1$sreject%2$s them. With the second case, users will be free to upload a new file.', 'yith-woocommerce-additional-uploads'), '<b>', '</b>');?>
                 </p>
             </div>
         </div>
@@ -286,32 +286,32 @@ if ( ! defined( 'ABSPATH' ) ) {
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>02-icon.png" alt="icon 02" />
-                    <h2><?php _e('Upload by the product','ywau');?></h2>
+                    <h2><?php _e('Upload by the product','yith-woocommerce-additional-uploads');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf(__(' A more organized and intuitive upload. With the premium version of the plugin, %1$susers can attach a file directly by the product%2$s, in order to let you work freely without any doubts about its correlated item. ', 'ywau'), '<b>', '</b>');?>
+                    <?php echo sprintf(__(' A more organized and intuitive upload. With the premium version of the plugin, %1$susers can attach a file directly by the product%2$s, in order to let you work freely without any doubts about its correlated item. ', 'yith-woocommerce-additional-uploads'), '<b>', '</b>');?>
                 </p>
             </div>
             <div class="col-1">
-                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>02.png" alt="<?php _e( 'Upload by the product','ywau') ?>" />
+                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>02.png" alt="<?php _e( 'Upload by the product','yith-woocommerce-additional-uploads') ?>" />
             </div>
         </div>
     </div>
     <div class="three section section-even clear">
         <div class="landing-container">
             <div class="col-1">
-                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>03.png" alt="<?php _e( 'Attachment customization','ywau') ?>" />
+                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>03.png" alt="<?php _e( 'Attachment customization','yith-woocommerce-additional-uploads') ?>" />
             </div>
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>03-icon.png" alt="icon 03" />
-                    <h2><?php _e( 'Attachment customization','ywau');?></h2>
+                    <h2><?php _e( 'Attachment customization','yith-woocommerce-additional-uploads');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf(__('Shop products are often different, and you could have the need to request to your users multiple files for order processing. The premium version of the plugin helps you perfectly, configuring %1$sgeneral%2$s or %1$sad hoc%2$s settings for each product of the shop. ', 'ywau'), '<b>', '</b>');?>
+                    <?php echo sprintf(__('Shop products are often different, and you could have the need to request to your users multiple files for order processing. The premium version of the plugin helps you perfectly, configuring %1$sgeneral%2$s or %1$sad hoc%2$s settings for each product of the shop. ', 'yith-woocommerce-additional-uploads'), '<b>', '</b>');?>
                 </p>
                 <p>
-                    <?php _e('And if you want to avoid some products to benefit from this feature, you will just have to click just once to deactivate the plugin\'s features.', 'ywau');?>
+                    <?php _e('And if you want to avoid some products to benefit from this feature, you will just have to click just once to deactivate the plugin\'s features.', 'yith-woocommerce-additional-uploads');?>
                 </p>
             </div>
         </div>
@@ -321,29 +321,29 @@ if ( ! defined( 'ABSPATH' ) ) {
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>04-icon.png" alt="icon 04" />
-                    <h2><?php _e('File removal','ywau');?></h2>
+                    <h2><?php _e('File removal','yith-woocommerce-additional-uploads');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf(__('Very often some of your users may want to change one of the attached files, maybe because they just want something different. Be prepared: purchase the premium version of the plugin and set the %1$sorder status%2$s in which you want to allow users to %1$sremove%2$s attached files. ', 'ywau'), '<b>', '</b>');?>
+                    <?php echo sprintf(__('Very often some of your users may want to change one of the attached files, maybe because they just want something different. Be prepared: purchase the premium version of the plugin and set the %1$sorder status%2$s in which you want to allow users to %1$sremove%2$s attached files. ', 'yith-woocommerce-additional-uploads'), '<b>', '</b>');?>
                 </p>
             </div>
             <div class="col-1">
-                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>04.png" alt="<?php _e( 'File removal','ywau') ?>" />
+                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>04.png" alt="<?php _e( 'File removal','yith-woocommerce-additional-uploads') ?>" />
             </div>
         </div>
     </div>
     <div class="five section section-even clear">
         <div class="landing-container">
             <div class="col-1">
-                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>05.png" alt="<?php _e( 'Attached notes','ywau') ?>" />
+                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>05.png" alt="<?php _e( 'Attached notes','yith-woocommerce-additional-uploads') ?>" />
             </div>
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>05-icon.png" alt="icon 05" />
-                    <h2><?php _e('Attached notes','ywau');?></h2>
+                    <h2><?php _e('Attached notes','yith-woocommerce-additional-uploads');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf( __( 'Activate notes for each uploaded file to give your users the freedom to add details for their attachments. In this way, you will have more %1$sinformation%2$s for your work, and the quality will just get better.','ywau' ),'<b>','</b>','<br>' ) ?>
+                    <?php echo sprintf( __( 'Activate notes for each uploaded file to give your users the freedom to add details for their attachments. In this way, you will have more %1$sinformation%2$s for your work, and the quality will just get better.','yith-woocommerce-additional-uploads' ),'<b>','</b>','<br>' ) ?>
                 </p>
             </div>
         </div>
@@ -353,29 +353,29 @@ if ( ! defined( 'ABSPATH' ) ) {
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>06-icon.png" alt="icon 06" />
-                    <h2><?php _e('Saving path','ywau');?></h2>
+                    <h2><?php _e('Saving path','yith-woocommerce-additional-uploads');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf( __('Customize the saving path according to your needs. Decide whether to sort your files by %1$sID%2$s or by %1$sorder number%2$s. Two solutions that will let you find easily and quickly the file you are looking for.','ywau'),'<b>','</b>'); ?>
+                    <?php echo sprintf( __('Customize the saving path according to your needs. Decide whether to sort your files by %1$sID%2$s or by %1$sorder number%2$s. Two solutions that will let you find easily and quickly the file you are looking for.','yith-woocommerce-additional-uploads'),'<b>','</b>'); ?>
                 </p>
             </div>
             <div class="col-1">
-                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>06.png" alt="<?php _e( 'Saving path','ywau') ?>" />
+                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>06.png" alt="<?php _e( 'Saving path','yith-woocommerce-additional-uploads') ?>" />
             </div>
         </div>
     </div>
     <div class="seven section section-even clear">
         <div class="landing-container">
             <div class="col-1">
-                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>07.png" alt="<?php _e( 'Email notification','ywau') ?>" />
+                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>07.png" alt="<?php _e( 'Email notification','yith-woocommerce-additional-uploads') ?>" />
             </div>
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>07-icon.png" alt="icon 07" />
-                    <h2><?php _e('Email notification','ywau');?></h2>
+                    <h2><?php _e('Email notification','yith-woocommerce-additional-uploads');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf( __('Don\'t forgo the integrated email notification system of the premium version of the plugin. %1$sInform your users about the status of their attachments%2$s, telling them if they have been accepted or rejected, perhaps for inappropriateness of content or low quality. Keep always in touch with them for a top-level service!','ywau'),'<b>','</b>'); ?>
+                    <?php echo sprintf( __('Don\'t forgo the integrated email notification system of the premium version of the plugin. %1$sInform your users about the status of their attachments%2$s, telling them if they have been accepted or rejected, perhaps for inappropriateness of content or low quality. Keep always in touch with them for a top-level service!','yith-woocommerce-additional-uploads'),'<b>','</b>'); ?>
                 </p>
             </div>
         </div>
@@ -385,29 +385,29 @@ if ( ! defined( 'ABSPATH' ) ) {
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>08-icon.png" alt="icon 08" />
-                    <h2><?php _e('User interaction','ywau');?></h2>
+                    <h2><?php _e('User interaction','yith-woocommerce-additional-uploads');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf( __('Take advantage of the comfortable email system that can easily and %1$squickly send messages%2$s about orders to your shop users. Write your messages and send them from the WooCommerce order detail page. Interact with your users to appear as the best vendor possible.','ywau'),'<b>','</b>'); ?>
+                    <?php echo sprintf( __('Take advantage of the comfortable email system that can easily and %1$squickly send messages%2$s about orders to your shop users. Write your messages and send them from the WooCommerce order detail page. Interact with your users to appear as the best vendor possible.','yith-woocommerce-additional-uploads'),'<b>','</b>'); ?>
                 </p>
             </div>
             <div class="col-1">
-                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>08.png" alt="<?php _e( 'User interaction','ywau') ?>" />
+                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>08.png" alt="<?php _e( 'User interaction','yith-woocommerce-additional-uploads') ?>" />
             </div>
         </div>
     </div>
     <div class="nine section section-even clear">
         <div class="landing-container">
             <div class="col-1">
-                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>09.png" alt="<?php _e( 'Upload pages','ywau') ?>" />
+                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>09.png" alt="<?php _e( 'Upload pages','yith-woocommerce-additional-uploads') ?>" />
             </div>
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>07-icon.png" alt="icon 09" />
-                    <h2><?php _e('Upload pages','ywau');?></h2>
+                    <h2><?php _e('Upload pages','yith-woocommerce-additional-uploads');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf( __('It is up to you choosing when you want your users to upload necessary files, so you can choose where showing the upload button in your shop: in %1$scart%2$s page, in %1$scheckout%2$s page or in %1$s"Thank you"%2$s page, so that your users will always be offered the best purchase conditions.','ywau'),'<b>','</b>'); ?>
+                    <?php echo sprintf( __('It is up to you choosing when you want your users to upload necessary files, so you can choose where showing the upload button in your shop: in %1$scart%2$s page, in %1$scheckout%2$s page or in %1$s"Thank you"%2$s page, so that your users will always be offered the best purchase conditions.','yith-woocommerce-additional-uploads'),'<b>','</b>'); ?>
                 </p>
             </div>
         </div>
@@ -417,14 +417,14 @@ if ( ! defined( 'ABSPATH' ) ) {
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>10-icon.png" alt="icon 10" />
-                    <h2><?php _e(' Single product','ywau');?></h2>
+                    <h2><?php _e(' Single product','yith-woocommerce-additional-uploads');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf( __('Every product in your shop is different from the others for features and usage, so this means that not for all products you have to ask your customers for an attachment. This is the reason why the plugin gives you also the opportunity to disable file upload for the specified product or to %1$sset upload rules%2$s for it or for its %1$svariations%2$s.','ywau'),'<b>','</b>'); ?>
+                    <?php echo sprintf( __('Every product in your shop is different from the others for features and usage, so this means that not for all products you have to ask your customers for an attachment. This is the reason why the plugin gives you also the opportunity to disable file upload for the specified product or to %1$sset upload rules%2$s for it or for its %1$svariations%2$s.','yith-woocommerce-additional-uploads'),'<b>','</b>'); ?>
                 </p>
             </div>
             <div class="col-1">
-                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>08.png" alt="<?php _e( 'Single product','ywau') ?>" />
+                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>08.png" alt="<?php _e( 'Single product','yith-woocommerce-additional-uploads') ?>" />
             </div>
         </div>
     </div>
@@ -432,11 +432,11 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="landing-container">
             <div class="premium-cta">
                 <p>
-                    <?php echo sprintf( __('Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce Uploads%2$s to benefit from all features!','ywau'),'<span class="highlight">','</span>' );?>
+                    <?php echo sprintf( __('Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce Uploads%2$s to benefit from all features!','yith-woocommerce-additional-uploads'),'<span class="highlight">','</span>' );?>
                 </p>
                 <a href="<?php echo $this->get_premium_landing_uri() ?>" target="_blank" class="premium-cta-button button btn">
-                    <span class="highlight"><?php _e('UPGRADE','ywau');?></span>
-                    <span><?php _e('to the premium version','ywau');?></span>
+                    <span class="highlight"><?php _e('UPGRADE','yith-woocommerce-additional-uploads');?></span>
+                    <span><?php _e('to the premium version','yith-woocommerce-additional-uploads');?></span>
                 </a>
             </div>
         </div>
