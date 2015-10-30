@@ -5,7 +5,7 @@ Plugin URI: http://yithemes.com
 Description: A concrete way to customize your orders, load a file with your images, and complete your order according to your needs.
 Author: Yithemes
 Text Domain: yith-woocommerce-additional-uploads
-Version: 1.0.5
+Version: 1.0.6
 Author URI: http://yithemes.com/
 */
 
@@ -45,7 +45,7 @@ if ( ! defined ( 'YITH_YWAU_FREE_INIT' ) ) {
 }
 
 if ( ! defined ( 'YITH_YWAU_VERSION' ) ) {
-    define ( 'YITH_YWAU_VERSION', '1.0.5' );
+    define ( 'YITH_YWAU_VERSION', '1.0.6' );
 }
 
 if ( ! defined ( 'YITH_YWAU_FILE' ) ) {
