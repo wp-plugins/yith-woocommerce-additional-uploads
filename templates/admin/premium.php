@@ -203,6 +203,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 .section.ten{
     background: url(<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>10-bg.png) no-repeat #fff; background-position: 85% 75%
 }
+.section.eleven{
+    background: url(<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>yith-bg.png) no-repeat #fff; background-position: 85% 75%
+}
 
 
 @media (max-width: 768px) {
@@ -425,6 +428,22 @@ if ( ! defined( 'ABSPATH' ) ) {
             </div>
             <div class="col-1">
                 <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>08.png" alt="<?php _e( 'Single product','yith-woocommerce-additional-uploads') ?>" />
+            </div>
+        </div>
+    </div>
+    <div class="eleven section section-even clear">
+        <div class="landing-container">
+            <div class="col-1">
+                <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>11.jpg" alt="<?php _e( 'Split products','ywau') ?>" />
+            </div>
+            <div class="col-2">
+                <div class="section-title">
+                    <img src="<?php echo YITH_YWAU_ASSETS_IMAGES_URL ?>yith-icon.png" alt="icon 11" />
+                    <h2><?php _e('Products split in cart','ywau');?></h2>
+                </div>
+                <p>
+                    <?php echo sprintf( __('Who know how many times your customers wished to purchase more than one copy of the same product, but customise each of them with different images! Now, you can do that!%3$sThanks to the %1$s"splitting"%2$s option, you will be able to split copies of the same product in more lines and attach different files to each of them. If until now you could do that only by placing different orders, now you can do all with in one order only!','ywau'),'<b>','</b>','<br>'); ?>
+                </p>
             </div>
         </div>
     </div>

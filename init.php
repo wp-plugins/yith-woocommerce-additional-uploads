@@ -5,7 +5,7 @@ Plugin URI: http://yithemes.com
 Description: A concrete way to customize your orders, load a file with your images, and complete your order according to your needs.
 Author: Yithemes
 Text Domain: yith-woocommerce-additional-uploads
-Version: 1.0.6
+Version: 1.0.7
 Author URI: http://yithemes.com/
 */
 
@@ -20,7 +20,7 @@ if ( ! function_exists ( 'is_plugin_active' ) ) {
 function yith_ywau_install_woocommerce_admin_notice () {
     ?>
     <div class="error">
-        <p><?php _e ( 'YITH WooCommerce Uploads is enabled but not effective. It requires WooCommerce in order to work.', 'yit' ); ?></p>
+        <p><?php _e ( 'YITH WooCommerce Uploads is enabled but not effective. It requires WooCommerce in order to work.', 'yith-woocommerce-additional-uploads' ); ?></p>
     </div>
     <?php
 }
@@ -28,7 +28,7 @@ function yith_ywau_install_woocommerce_admin_notice () {
 function yith_ywau_install_free_admin_notice () {
     ?>
     <div class="error">
-        <p><?php _e ( 'You can\'t activate the free version of YITH WooCommerce Uploads while you are using the premium one.', 'yit' ); ?></p>
+        <p><?php _e ( 'You can\'t activate the free version of YITH WooCommerce Uploads while you are using the premium one.', 'yith-woocommerce-additional-uploads' ); ?></p>
     </div>
     <?php
 }
@@ -45,7 +45,7 @@ if ( ! defined ( 'YITH_YWAU_FREE_INIT' ) ) {
 }
 
 if ( ! defined ( 'YITH_YWAU_VERSION' ) ) {
-    define ( 'YITH_YWAU_VERSION', '1.0.6' );
+    define ( 'YITH_YWAU_VERSION', '1.0.7' );
 }
 
 if ( ! defined ( 'YITH_YWAU_FILE' ) ) {
